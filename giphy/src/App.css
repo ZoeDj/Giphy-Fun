@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.giphy-list {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 2% 10%;
+}
+.giphy-item {
+  padding: 1em;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.form-group {
+  margin-top: 3%;
+  margin-left: 1%;
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+  align-items: center;
+  font-size: 1em;
+}
+.btn {
+  margin-top: 2%;
+  padding: 10px;
+  background: black;
+  color: white;
+  font-size: 1em;
+  width: 100px;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+  color: yellow;
+}
+input {
+  padding: 10px;
+  margin-top: 2%;
+  font-size: 1em;
+}
+
+@media all and (max-width: 700px) {
+  .giphy-list {
+    flex-direction: column;
+  }
+}
